@@ -99,8 +99,8 @@ Edit
 git clone https://github.com/rakeshhc22/queue-management-system.git
 cd queue-management-system
 
-
-### 2. Setup the Backend
+**
+### 2. Setup the Backend**
 
 cd server
 npm install
@@ -109,7 +109,7 @@ npm start
 
 
 
-3. Setup the Frontend
+### 3. Setup the Frontend
 
 cd client
 npm install
