@@ -1,0 +1,81 @@
+/* client/src/styles/QueueStats.css */
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(200, 200, 200, 0.2);
+}
+
+.stat-box {
+  flex: 1 1 220px;
+  background: linear-gradient(to bottom right, #fefefe, #f3f8ff);
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e3eaf5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.stat-box:hover {
+  transform: scale(1.04);
+  background: linear-gradient(to bottom right, #f9fcff, #eaf4ff);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box h3 {
+  font-size: 2.3rem;
+  color: #1f2937;
+  margin: 0.5rem 0;
+  font-weight: 700;
+}
+
+.stat-box p {
+  font-size: 1.05rem;
+  color: #4b5563;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Light Pastel Gradient Icon Circle */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  box-shadow: 0 4px 12px rgba(0, 242, 254, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-box:hover .icon-circle {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(0, 242, 254, 0.6);
+}
+
+.icon-blue {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+}
+.icon-green {
+  background: linear-gradient(135deg, #d4fc79, #96e6a1);
+}
+.icon-pink {
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+}
+.icon-orange {
+  background: linear-gradient(135deg, #fddb92, #d1fdff);
+}

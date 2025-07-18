@@ -1,0 +1,144 @@
+/* Ensure full screen with no scroll
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+.login-page {
+  height: 100vh;
+  width: 100vw;
+  background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  width: 380px;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.login-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #051838; /* dark slate */
+  font-weight: 700;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: capitalize;
+  border-bottom: 2px solid #94a3b8; /* subtle underline */
+  padding-bottom: 0.4rem;
+}
+
+
+.login-form input {
+  width: 100%;
+  padding: 0.6rem 0.9rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.login-form input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #fff;
+}
+
+.login-form input::placeholder {
+  color: #e0e0e0;
+}
+
+.password-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input input {
+  width: 100%;
+  padding-right: 2rem;
+}
+
+.password-input span {
+  position: absolute;
+  right: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.password-input span:hover {
+  color: #fff;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.65rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(135deg, #0056b3, #003f8a);
+  transform: scale(1.02);
+}
+
+.login-footer {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #e9e9e9;
+}
+
+.login-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.login-footer a:hover {
+  color: #aad7ff;
+}
+
+.error {
+  color: #ff6b6b;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
