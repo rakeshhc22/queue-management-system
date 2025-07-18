@@ -93,27 +93,33 @@ Edit
 
 ## 📦 Getting Started (Local Development)
 
+## 📦 Getting Started (Local Development)
+
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/rakeshhc22/queue-management-system.git
 cd queue-management-system
+```
 
-**
-### 2. Setup the Backend**
+### 2. Setup the Backend
 
+```bash
 cd server
 npm install
 # Add your MongoDB URI to a `.env` file
 npm start
-
-
+```
 
 ### 3. Setup the Frontend
 
+```bash
 cd client
 npm install
 npm start
+```
+
+
 
 
 👨‍💻 Author
